@@ -1,12 +1,15 @@
-# React + Vite
+If you're diving into Redux, here’s a quick breakdown:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1️⃣ Create a Store – The central place to manage the application's state.
+2️⃣ Define Reducers (Slices) – In Redux Toolkit, we use slices to define reducers and actions.
+3️⃣ Export Reducers – First, export them individually for component use, then combine and add them to the store.
+4️⃣ Integrate Reducers with Store – Import and configure them in the store.
+5️⃣ Build Components – Components interact with the store using useSelector and useDispatch.
+6️⃣ Dispatch Actions – Actions update the store via reducers.
+7️⃣ Access Values – Use useSelector to read state and useDispatch to trigger actions.
+8️⃣ Action Payloads – Any updated values are stored in action.payload.
 
-Currently, two official plugins are available:
+🔹 Key Takeaway: To perform an action, it must be dispatched properly to update the store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
